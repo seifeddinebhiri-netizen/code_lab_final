@@ -1,5 +1,40 @@
+# --- Python & Bytecode ---
 __pycache__/
-.env
-.DS_Store
+*.py[cod]
+*$py.class
+
+# --- Virtual Environments ---
+# On ignore tous les noms de dossiers classiques pour les venv
 venv/
 env/
+.venv/
+.env_*/
+
+# --- Environment Variables (CRITIQUE : Ne jamais pusher ça) ---
+.env
+.env.local
+
+# --- IDE & Editors Settings ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Testing & Logs ---
+.pytest_cache/
+*.log
+htmlcov/
+.coverage
+
+# --- OS System Files ---
+.DS_Store
+Thumbs.db
+
+# --- Frontend (Si nécessaire) ---
+node_modules/
+dist/
+build/
+
+# --- Hackathon Specifics ---
+# On veut garder les caches pour la démo, donc on NE LES MET PAS ici.
+# (market_news_cache.json et processed_urls.txt seront donc bien envoyés sur GitHub)
