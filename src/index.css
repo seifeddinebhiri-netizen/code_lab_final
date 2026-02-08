@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-midnight: #0B1120;
+  --color-slate-widget: #1E293B;
+  --color-gold: #F59E0B;
+  --color-neon-red: #EF4444;
+}
+
+body {
+  background-color: var(--color-midnight);
+  color: #E2E8F0;
+}
+
+.gold-glow {
+  box-shadow: 0 0 15px rgba(245, 158, 11, 0.3);
+}
+
+.text-gold {
+  color: var(--color-gold);
+}
+
+.bg-midnight {
+  background-color: var(--color-midnight);
+}
+
+.bg-widget {
+  background-color: var(--color-slate-widget);
+}

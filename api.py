@@ -62,7 +62,7 @@ def predict(request: PredictionRequest):
 
 
 
-//Temps réel
+#Temps réel
 # ... (imports existants)
 from src.feature_engineering import BVMTFeatureEngineer # Assure-toi d'importer ça
 
