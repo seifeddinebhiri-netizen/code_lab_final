@@ -1,0 +1,214 @@
+{
+  "SFBT": {
+    "ticker": "SFBT",
+    "global_sentiment_score": -0.7,
+    "market_consensus": "SELL",
+    "summary": "Ceci est un événement simulé pour la démonstration.",
+    "last_updated": "2026-02-08 00:06",
+    "news_analysis": [
+      {
+        "title": "[DEMO] Grève inattendue dans l'usine principale de la SFBT",
+        "sentiment": -0.7,
+        "predicted_impact": "HIGH"
+      }
+    ]
+  },
+  "BIAT": {
+    "ticker": "BIAT",
+    "last_updated": "2026-02-07 23:34",
+    "global_sentiment_score": 0.9,
+    "market_consensus": "BUY",
+    "volatility_prediction": "MEDIUM",
+    "summary": "La BIAT affiche une excellente performance avec un pic historique en bourse, des récompenses internationales prestigieuses et le renouvellement d'une recommandation d'achat, soulignant sa solidité bancaire.",
+    "news_analysis": [
+      {
+        "title": "La BIAT atteint un pic historique en Bourse à 134 dinars l'action - Ilboursa.com",
+        "source": "Ilboursa.com",
+        "sentiment": 1.0,
+        "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPa20zNFJLVmo3Z18tOW5OVnBYMDZkZXNqMFdoTDVLSHNfa1JOcVBJcTZwbVg5T3VWVUFoNXBEODFFSHFJRWUwQ2NMRDdORHR2aWxWUW1hanNTNktrUGdrN050OG5LWW1kTktiQnFxeVBsTmdscms1MmljelFXYTlHajlHRTAtM0JfczNYemVuYWNObURpd3JNRTJ5SUJjMGRkNVlfZm1iRdIBrAFBVV95cUxPcWw4R3JiZHRDSGhHeWZtSDU5Yl94YlZSY2trWmJEbUFBY3N4QUVVdm8yVjgtV2FLYVowZUgyQ29MQUEyRUF6X1ZUc2hENzFZa2JKTERoMVBMbHFjS2ZyaUd6UjJ4dmUxUzJENE9sc1U2QnRPSWM5U01UbjhiYmRfanU4X00xaW1PWEd6TjlLa0xpc1JRVHM4SEJhQ19JelA3eWp4bDY2SEFwaHFn?oc=5"
+      },
+      {
+        "title": "La BIAT distinguée par cinq prestigieuses récompenses internationales en 2025 - Webmanagercenter",
+        "source": "Webmanagercenter",
+        "sentiment": 0.9,
+        "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTTcwang4cER5R1FXMVpfY1pIZEtfZjZiQ0xRQVZ5OFFYb0d1U2wxQW5rNGR6a2huWHNhRnpXRTVkWjN3S0V3VFV3WVJUbnZKZklyTFJaOHgwZjVnN0d3LURxVXQwc21rMl84VXhTQ3dtdjhaZlFjX2lTcE5OckZ4RTl5a3pkR1k2aUVhNjB6S0NiWmZjXy10MWZacm8tMGhSMzJFSjV3ZnY4a2xPeE5wZlhpcS05bkZtanhZSF95VG1WY0V2WmRVUw?oc=5"
+      },
+      {
+        "title": "BIAT : Tunisie Valeurs renouvelle sa recommandation d’achat sur le titre BIAT. - Tustex",
+        "source": "Tustex",
+        "sentiment": 0.9,
+        "link": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxNaXNmaDhibi1ZMU91T1ZFWW5TZnY5UERxRVhaMjA1YWRXcDNrd3pxbUhHTWF4dW9DV1BXckV2eXg2dnpNZElWLVctejdoT0tXcDN4alY4NzJBRmI4Mk9MQnZQaTdkWk9WMHd4M28teGZaeTIzeXRhQ1d1bnozUk5ULVBIME5neEZHRkFSbEJuOUpkUEh5ZFhINmd3d2RoanlHd1pjN0RpUDA0Y1B2RERBQ09hVzlneE4yTDJXbnhNMkZRdHBSUmNHNzNIZEtUSXZWOXFneWRERndPVGZVclBvMWNZb2pqUXVVUU1fZ3pfVXB6bTRGcjhZSUxoWUNQMWw2Z0ozNTRkeS1QOWZMZ0ZYeXZrbWtRS3J4cHdZdlpFQkxLZ2Uxd0xXS2ltRQ?oc=5"
+      },
+      {
+        "title": "Banque Internationale Arabe de Tunisie : un titre porté par la solidité bancaire dans un marché t - AD HOC NEWS",
+        "source": "AD HOC NEWS",
+        "sentiment": 0.8,
+        "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQaGM4SGFTUmNIVEhKZjNJU0tYc1BrSFV3X1NsRzBnTDhWOUlQQTRZSEIySHlOTk5ZY3JvWFhjd1ZIcG5zR3ZHRUJfdmt3R2tYQmxNZ09GdV9Yc3kxV3FESTFaZGJWcy1pMFJkUW9qQVJlVU52cHF4a2d2YThwNjFENXhnb3cwRWVwRm95TzZoLWxxMEJmVHN4cUk3MWdHcnRlT1IyYjEwNEd1NjBzYm9qZjFDMHk5NnUtOWFsSXFwc19Sd3FyZFRR?oc=5"
+      }
+    ]
+  },
+  "SAH": {
+    "ticker": "SAH",
+    "global_sentiment_score": 0.9,
+    "market_consensus": "BUY",
+    "summary": "Ceci est un événement simulé pour la démonstration.",
+    "last_updated": "2026-02-08 00:09",
+    "news_analysis": [
+      {
+        "title": "[DEMO] SAH Lilas annonce l'acquisition d'un concurrent au Maroc",
+        "sentiment": 0.9,
+        "predicted_impact": "HIGH"
+      }
+    ]
+  },
+  "POULINA": {
+    "ticker": "POULINA",
+    "last_updated": "2026-02-07 23:34",
+    "global_sentiment_score": 0.9,
+    "market_consensus": "BUY",
+    "volatility_prediction": "MEDIUM",
+    "summary": "Poulina Group Holding (PGH) est engagée dans une \"révolution industrielle verte\", ce qui indique une orientation stratégique positive vers l'innovation et la durabilité.",
+    "news_analysis": [
+      {
+        "title": "PGH : Comment Poulina Group Holding prépare-t-il sa révolution industrielle verte ?",
+        "source": "Webmanagercenter",
+        "sentiment": 0.9,
+        "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOMW9Wc2JBczNPckg5amxiUjZlWjdfZENmbUtjNVBuSWpUR29YRWtkdloweEZJT3ZvR2ZGX3R6cGFsRTVST19wMFY0a3NYaVg2c1FJQzB0TzJUcldnREN4YjVBei1SNDZ1RTdtZENlOHhHc1NINUt1M2dFMkI4TnZFdk5QbGFyQ0c0ckktOTVpUFljVFRVYlJsNUdqTVB6SzNzSWdQRkZScE56YlVYYW82T20wNEpnQVNHMU5YT09pdkx0Y09MZ2ZqYk5SSQ?oc=5"
+      }
+    ]
+  },
+  "SOTUVER": {
+    "ticker": "SOTUVER",
+    "last_updated": "2026-02-07 23:34",
+    "global_sentiment_score": 0.4,
+    "market_consensus": "HOLD",
+    "volatility_prediction": "MEDIUM",
+    "summary": "Le titre SOTUVER a récemment affiché une stabilité en bourse, bien qu'une analyse financière précédente prévoie de belles perspectives pour le groupe.",
+    "news_analysis": [
+      {
+        "title": "PGH grignote, On Tech proche de l’équilibre et Sotuver inchangé - African Manager",
+        "source": "African Manager",
+        "sentiment": 0.0,
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNbzZ1bmpiWC0xR3dkdjJ3MXFCUzRWSGx6bVQ3WlFIUzVEYk56aTFaT1JOeUJZeXhramFsWFoya2xHRUozb3d2UC1JMU56NGdJYW9zcjZlMHF2WU5Ub2NxTmJyb2FkX3NHamV0OU8zUGJmOXRBN2JiS2p4TnNNWDRVazVKMzlMSGVYd1dpclNUR0k1d0U?oc=5"
+      },
+      {
+        "title": "SOTUVER : MAC S.A voit de belles perspectives pour le groupe SOTUVER - Tustex",
+        "source": "Tustex",
+        "sentiment": 0.8,
+        "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQTjJpY05nY0lfclBWc1NDS0FKYjBtNGcxX2YwUENRVHRuX290cVhtNGZHRGxFaWdXZ1M2cUw0SDRfcmZSd19CY2lUX2wwZlNHM1lzNWRueFl4Wkt6bFBMV19xUVU5b2FjMnNBTHhvamNudjM0UEhSOWNEcHlIdWpBMWs5WDgzdVRtZkJaTjg4TWlXNEJLS3YyeXRpN1BsOVdTTzk5X2h3?oc=5"
+      }
+    ]
+  },
+  "BT": {
+    "ticker": "BT",
+    "last_updated": "2026-02-07 23:34",
+    "global_sentiment_score": 0.33,
+    "market_consensus": "HOLD",
+    "volatility_prediction": "MEDIUM",
+    "summary": "La Banque de Tunisie (BT) a confirmé sa solidité financière, a réalisé une importante transaction de bloc sur ses titres et a procédé à une cession d'actions Air Liquide Tunisie, indiquant une activité stable et une confiance maintenue.",
+    "news_analysis": [
+      {
+        "title": "Bourse de Tunis : La Banque de Tunisie confirme sa solidité - Webmanagercenter",
+        "source": "Webmanagercenter",
+        "sentiment": 0.8,
+        "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPS2diQmZQU0x2ekcxX1ZtVmNHWkFTM0MyQy1IeE5FYU13QXEtYW5BY2J4UWZqSFc3c0dzUklFTVpET1dIdUVfcTF3cnpLd2FRcWwydVQ3bnVscDJTNXdLRFJLQ29WUUFYcEJSbFlkUHVvYW03R191MTdSdmdSNVhyUW5RS0trZXctTklHUXN5blgzcGNia18zSE1TMFNkRmcwNjhONmZfbHV2QmJMNXc?oc=5"
+      },
+      {
+        "title": "Bourse - Banque de Tunisie : Réalisation d'une transaction de bloc pour 5,4 millions de dinars - Ilboursa.com",
+        "source": "Ilboursa.com",
+        "sentiment": 0.2,
+        "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOdTRxYWlSQ0hMR0dBdVVjU2RtSEs3U29VcXF6VVByTnBkclhRUmxpbEtNRktHdGJidzkxU0FHeW50MDZDR3ExYzBYdGZRNXNpQmxiMmJEcm5xM0hKUU13akZDblpwc0tWeEFJdjRlZWFBOXpMMEhGTUdUMEVMaktmdwlwRDVlMzBfMXF6SmJnU2xiR1l5RGxndmlGSGQ4ekJVYWhvbjFydm45S0p2YUxiZzVmWHBRNks2TWRCSWl1Nm9JMGdSeHFtRUFn0gHPAUFVX3lxTE9NS1ppckhud0JQQ3MxTDlPTmtNRWZSUWNuVXlrS0lvUnltdHpmUDVSZnpWby0ydHNka0RIdlZEeDZUdDFwcy16N2JuSkhtWFZDWXNwV1ZqZWdRMi1QdnF5OVUtUENUS2x6UXZldV9HWHRxQTI3c0pxUUtuU0s0XzhLRWpLQi1ReDZYMEJhQXVCYlRrbGtLYlRLSEh5eXlrYXlDTFEyeGZmVldqbUlsMDVJQktsVURRb2xqc1lMeENEbVNNRjVUV3VzUWZNYjhOaw?oc=5"
+      },
+      {
+        "title": "La BT cède 3 300 actions Air Liquide Tunisie - Leconomiste Maghrebin",
+        "source": "Leconomiste Maghrebin",
+        "sentiment": 0.0,
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQenYySkZDTnozTUVQZ1RuYmpSZl9HM2NiMkhZc1FkVHczMmZTeWVTRmIyTjRfcGNCeTFHb2J0UktyN0dzMXZOQTZTUzBUNVFSR3NwTkVudklyN3NBZTJ4dm84bGJTYk1HZHZ1S3JsWk5PbkNqNVl3ckRPYmdqeUt3S1h6Q09hZzhaa3NHRFJhcWJTRjJQSnRvZQ?oc=5"
+      }
+    ]
+  },
+  "EUROCYCLES": {
+    "ticker": "EUROCYCLES",
+    "last_updated": "2026-02-07 23:35",
+    "global_sentiment_score": 0.0,
+    "market_consensus": "HOLD",
+    "volatility_prediction": "LOW",
+    "summary": "Les informations récentes concernant Eurocycles sont neutres, se limitant à un changement d'intermédiaire en bourse en février 2025, tandis que l'entrée en bourse en 2013 est une information historique sans impact actuel significatif.",
+    "news_analysis": [
+      {
+        "title": "Tunisie : Eurocycles fait son entrée en Bourse - Jeune Afrique",
+        "source": "Jeune Afrique",
+        "sentiment": 0.0,
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQNkE0X2szQ28yNG51c096NDFGZmcxejlvaUtTLVNIellKTzJVY09URk41ZzRmVVFZR0ZMTXNaUHZ2SlQwTUV3OW9QMGhyeXc3TVZpMGQzWGpNbGNCWjJZX0xfaUdEazdxNVU5OTI0ZmwwRWYzQU5FU1ZHR0I0S3BzYXNVTnFFQ1VMYmhyWXlZbnE2NnhxOWpQbU05MGFZU1N1WE1Z?oc=5"
+      },
+      {
+        "title": "Tunisie : Euro-Cycles change d’intermédiaire en Bourse - Entreprises Magazine",
+        "source": "Entreprises Magazine",
+        "sentiment": 0.0,
+        "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQc2tRXy1UTGJ3enNmY19lZnRWNW85NGxuQ0tlZHFhZks4cmN1UXhPY01tYnhXa0VlbE5XSmdqeE54NWN0RjUySDRzTEo5TGtZZzFPQWFCaFBRMkRFMEhZRGVMVzVIWUNUVGozY2x6SXdmSGJwSVNLdE5vRFp0VHQtRi12Rldaemp6Vkx2MC15M2ltQU0?oc=5"
+      }
+    ]
+  },
+  "TELNET": {
+    "ticker": "TELNET",
+    "last_updated": "2026-02-07 23:35",
+    "global_sentiment_score": 0.9,
+    "market_consensus": "BUY",
+    "volatility_prediction": "HIGH",
+    "summary": "Le groupe Telnet prévoit une forte croissance de ses produits d'exploitation en 2025, dépassant les 80 millions de dinars avec une hausse de 17%, ce qui est un indicateur financier très positif.",
+    "news_analysis": [
+      {
+        "title": "Les produits d'exploitation du groupe Telnet dépassent les 80 MD en 2025, en hausse de 17% - Tustex",
+        "source": "Tustex",
+        "sentiment": 0.9,
+        "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPdzFmQ2hfOVItMFNDWElxNFNMYkNNTjljUUxVdVZaSHpnR1J2Yl9ZWXg3bUVYb1pLYTEzMnpQaGhLdE5Ndk1XWWZ5VTlkOHNOVjlfcExCT2dSRklwdTNZN3A4NGFGei1LYllmblp3bHhRbnNvWkd0UHlNWGFjNnpQNWs2WUVlTEZWQXdFRm9yUk9pOWMxaFI5WVpiTGRRZVNUcm1VYm9rTGF6NXJieVNNejhSemF1cVRCaXNhTXU0VE5LdjdkYmQ0X1N3cEFsSXhZdWNTZUtvMmxibmtxMFE?oc=5"
+      }
+    ]
+  },
+  "TPR": {
+    "ticker": "TPR",
+    "last_updated": "2026-02-07 23:35",
+    "global_sentiment_score": -0.25,
+    "market_consensus": "HOLD",
+    "volatility_prediction": "LOW",
+    "summary": "L'action TPR est décrite comme illiquide et peu suivie, bien qu'elle suscite des interrogations parmi les investisseurs, ce qui n'annonce pas de mouvement de prix significatif à court terme.",
+    "news_analysis": [
+      {
+        "title": "TPR à la Bourse de Tunis : un titre illiquide qui échappe aux radars mais interroge les investisse - AD HOC NEWS",
+        "source": "AD HOC NEWS",
+        "sentiment": -0.25,
+        "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOYUlKVnNNQVd3MHlXUmRWYzdkVDBzTGdMcjhjVGhDYlp5dzVoWkRPX2s1T2ZKZ0g3QTdnV1hobU93RGlyTzRMUnF2RUVOZlBiMWVfNmhKaGlqUEhIU0ttcDlXVjFRakd6NUQxaldpZU9OWjZ4T2RhMlI2dXl1N3dkc1N0OUtJdWh1SmhwMkdhU1VaU1ZuQ3B5QXNZQzcwS1JyNGR0aktoc2FnYnN6a0VMVkdnOVg5c3FZRURMNTlydk5NT2s?oc=5"
+      }
+    ]
+  },
+  "ATB": {
+    "ticker": "ATB",
+    "last_updated": "2026-02-07 23:35",
+    "global_sentiment_score": 0.7,
+    "market_consensus": "HOLD",
+    "volatility_prediction": "LOW",
+    "summary": "L'Arab Tunisian Bank (ATB) a publié son premier rapport de durabilité ESG, une initiative positive qui renforce la transparence et l'engagement de la banque envers la responsabilité sociale et environnementale.",
+    "news_analysis": [
+      {
+        "title": "L'Arab Tunisian Bank publie son premier reporting de durabilité ESG - Ilboursa.com",
+        "source": "Ilboursa.com",
+        "sentiment": 0.7,
+        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWkthZmlrUTF0TlQxT0RlazdOM09FZzhfNG16OXNUV0s2N0d3OF9idDFSYkVSYTlHeE12M19yclNpNVdDMWc4bjRxSTg3c1FlR0RLRThGN1B4SHF3T0k2aldVVnU2NFJwd2dMendjNU1uRF82cEt4RVNzSDYxYjQ5c3E0WExVYVM0SGpmTHlMV3VyUk5HSjlzM3RkRkZFLVozZmZmM3lHYWUxd9IBrwFBVV95cUxNWVNGTGJGZ2cySGRiZ0hvM3czdkJCTXhUOG0tLXVDVHFScTE4Q0dlazNHYzlFbFZsblV1LXRVZG9wUG5qYUVNdUdteGJhV1pYSHRqUURkamp2dzAzWlZGc2QxX3RpVVVHM3lmZjJ4c2hKd0RGbi1MWTI0TFdsY1JLZ0lUTGt0VzVWeXlZRVFseUdkRWJhNGRYRWpudDZ5SERyLTBkcDdiaGVVUGdzazFN?oc=5"
+      }
+    ]
+  },
+  "TUNINDEX": {
+    "ticker": "TUNINDEX",
+    "global_sentiment_score": -0.5,
+    "market_consensus": "SELL",
+    "summary": "Ceci est un événement simulé pour la démonstration.",
+    "last_updated": "2026-02-08 00:08",
+    "news_analysis": [
+      {
+        "title": "[DEMO] Le marché chute de 2% suite aux annonces de la BCT",
+        "sentiment": -0.5,
+        "predicted_impact": "HIGH"
+      }
+    ]
+  }
+}
