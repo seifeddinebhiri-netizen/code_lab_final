@@ -1,0 +1,12 @@
+# Module 4 — Agent de décision & Gestion de portefeuille (API FastAPI)
+#
+# Installation:
+#   pip install -r requirements.txt
+#
+# Exécution (exemple):
+#   python run_module4_api.py
+
+
+fastapi>=0.110
+uvicorn[standard]>=0.24
+pydantic>=2.0
