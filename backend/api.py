@@ -4,6 +4,7 @@ import joblib
 import os
 from src.hybrid_model import EliteForecaster
 from colorama import Fore, init
+from fastapi.middleware.cors import CORSMiddleware
 
 init(autoreset=True)
 
@@ -13,10 +14,24 @@ app = FastAPI(
     version="2.0.0"
 )
 
-# --- MODÈLE DE REQUÊTE ---
+# Configuration CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# --- MODÈLES DE REQUÊTE ---
 class PredictionRequest(BaseModel):
     ticker: str = "SFBT"  # Valeur par défaut
     days: int = 5
+
+class PasswordUpdate(BaseModel):
+    currentPassword: str
+    newPassword: str
+    confirmPassword: str
 
 @app.get("/")
 def home():
@@ -60,7 +75,10 @@ def predict(request: PredictionRequest):
         raise HTTPException(status_code=500, detail=str(e))
     
 
-
+@app.post("/change-password")
+def change_password(data: PasswordUpdate):
+    # Logique pour vérifier l'ancien MDP dans MySQL et sauver le nouveau
+    return {"status": "success"}
 
 #Temps réel
 # ... (imports existants)

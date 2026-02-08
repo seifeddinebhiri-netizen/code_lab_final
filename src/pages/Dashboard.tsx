@@ -9,11 +9,11 @@ import MarketView from './dashboard/MarketView';
 import AnalysisView from './dashboard/AnalysisView';
 import PortfolioView from './dashboard/PortfolioView';
 import SurveillanceView from './dashboard/SurveillanceView';
+import AcademyView from './dashboard/AcademyView';
 
 const Dashboard: React.FC = () => {
     const location = useLocation();
     const navigate = useNavigate();
-    const [isConnected, setIsConnected] = useState(true);
     const [userCapital, setUserCapital] = useState<number | undefined>(undefined);
     const [userRole, setUserRole] = useState<'investisseur' | 'regulateur'>('investisseur');
 
@@ -36,14 +36,6 @@ const Dashboard: React.FC = () => {
         }
     }, [navigate]);
 
-    // Simulate connection status updates
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setIsConnected(prev => !prev);
-        }, 8000);
-        return () => clearInterval(interval);
-    }, []);
-
     const getTitle = () => {
         switch (activeTab) {
             case 'analysis': return 'Analyse Technique IA';
@@ -64,7 +56,7 @@ const Dashboard: React.FC = () => {
 
             {/* Main Content Area */}
             <div className="flex-1 ml-64 flex flex-col h-screen overflow-hidden relative">
-                <Header onSearch={(val) => console.log(val)} isConnected={isConnected} />
+                <Header onSearch={(val) => console.log(val)} />
 
                 {/* Content Container */}
                 <div className="flex-1 overflow-y-auto p-6 md:p-8 pb-28 space-y-8 scrollbar-hide relative z-10 w-full">
@@ -85,17 +77,6 @@ const Dashboard: React.FC = () => {
                                 </h1>
                             </div>
                         </div>
-
-                        <div className="flex items-center gap-3 bg-slate-800/40 px-4 py-2 rounded-lg border border-slate-700/50 backdrop-blur-sm">
-                            <div className={clsx(
-                                "w-2 h-2 rounded-full",
-                                isConnected ? "bg-emerald-400 animate-pulse" : "bg-red-500"
-                            )}></div>
-                            <div className="text-right">
-                                <p className="text-[10px] uppercase font-bold text-slate-500 tracking-wider">SYNC Temps Réel</p>
-                                <p className="text-xs text-white font-mono">{new Date().toLocaleTimeString()}</p>
-                            </div>
-                        </div>
                     </div>
 
                     {/* ROUTING FOR DASHBOARD VIEWS - Filtered by Role if needed */}
@@ -106,6 +87,7 @@ const Dashboard: React.FC = () => {
                         {/* Investor Specific */}
                         <Route path="analysis" element={<AnalysisView />} />
                         <Route path="portfolio" element={<PortfolioView capital={userCapital} />} />
+                        <Route path="academy" element={<AcademyView />} />
 
                         {/* Regulator Specific */}
                         <Route path="alerts" element={<SurveillanceView />} />

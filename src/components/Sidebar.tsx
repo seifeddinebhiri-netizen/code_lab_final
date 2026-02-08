@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { LayoutDashboard, TrendingUp, Briefcase, ShieldAlert, LogOut, Search } from 'lucide-react';
+import { LayoutDashboard, TrendingUp, Briefcase, ShieldAlert, LogOut, Search, Activity } from 'lucide-react';
 import clsx from 'clsx';
 import { motion } from 'framer-motion';
 
@@ -14,6 +14,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, role }) => {
     const investorMenu = [
         { id: 'market', label: 'Marché', icon: LayoutDashboard, path: '/dashboard/market' },
         { id: 'analysis', label: 'Analyse IA', icon: TrendingUp, path: '/dashboard/analysis' },
+        { id: 'academy', label: 'Simulation Academy', icon: Activity, path: '/dashboard/academy' },
         { id: 'portfolio', label: 'Portefeuille', icon: Briefcase, path: '/dashboard/portfolio' },
     ];
 

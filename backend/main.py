@@ -50,7 +50,7 @@ def get_db_connection():
 # CORS Middleware for React Frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -98,6 +98,23 @@ class Alert(BaseModel):
 
 class AddFundsRequest(BaseModel):
     amount: float
+
+class PasswordUpdate(BaseModel):
+    currentPassword: str
+    newPassword: str
+    confirmPassword: str
+
+class TradeRequest(BaseModel):
+    user_id: int
+    ticker: str
+    quantity: float
+    purchase_price: float
+
+class DemoPortfolioItem(BaseModel):
+    id: int
+    ticker: str
+    quantity: float
+    purchase_price: float
 
 @app.post("/users/{user_id}/add-funds")
 def add_funds(user_id: int, request: AddFundsRequest):
@@ -284,37 +301,6 @@ def get_alerts():
     finally:
         cursor.close()
         conn.close()
-
-# 4. Market Sentiment (GET /market/sentiment) - VERSION "TRENDING ONLY" 🔥
-@app.get("/market/sentiment", response_model=List[MarketSentiment])
-def get_market_sentiment(
-    limit: int = 10,       # On ne veut que le Top 10
-    min_impact: float = 0.2 # On ignore les variations trop faibles (bruit)
-):
-    """
-    Renvoie uniquement les actions 'Trending' (Fortement Positives ou Négatives).
-    Trie par 'Impact Absolu' pour montrer ce qui bouge le plus.
-    """
-    data = get_market_data_from_cache()
-    all_items = list(data.values())
-    
-    # Étape 1 : Filtrer le "Bruit" (Score proche de 0)
-    # On garde seulement si le score est > 0.2 OU < -0.2
-    interesting_items = [
-        item for item in all_items 
-        if abs(item.get('global_sentiment_score', 0)) >= min_impact
-    ]
-    
-    # Étape 2 : Trier par "Intensité" (Magnitude du score)
-    # On veut voir -0.9 et +0.8 EN PREMIER. +0.1 doit être à la fin.
-    # La fonction 'abs()' permet de comparer l'intensité sans se soucier du signe.
-    interesting_items.sort(
-        key=lambda x: abs(x.get('global_sentiment_score', 0)), 
-        reverse=True
-    )
-    
-    # Étape 3 : Renvoyer seulement le Top X (par défaut 10)
-    return interesting_items[:limit]
 
 if __name__ == "__main__":
     import uvicorn
