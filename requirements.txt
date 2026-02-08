@@ -1,4 +1,18 @@
+# --- Serveur Backend ---
 fastapi
 uvicorn
+
+# --- Base de Données ---
 mysql-connector-python
 pydantic
+
+# --- Analyse de Données ---
+pandas
+numpy
+plotly
+
+# --- Intelligence Artificielle ---
+scikit-learn
+xgboost
+prophet
+joblib
