@@ -7,7 +7,7 @@ from datetime import datetime
 
 # --- CONFIGURATION ---
 # Put your API key here or in a .env file
-API_KEY = "AIzaSyCm9tKB61-DgSxeCZW7p5DHVqZXrIjLttU" # or "YOUR_API_KEY_HERE"
+API_KEY = "AIzaSyCm9tKB61-DgSxeCZW7p5DHVqZXrIjLttU" # or "YOUR_API_KEY_HERE" sorry for putting i needed to
 
 genai.configure(api_key=API_KEY)
 

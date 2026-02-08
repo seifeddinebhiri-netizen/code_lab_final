@@ -70,7 +70,7 @@ const Login = () => {
                         <ShieldCheck size={32} className="text-gold-500" />
                     </div>
                     <h1 className="text-3xl font-bold mb-2">Connexion</h1>
-                    <p className="text-slate-400">Accédez à votre espace Project ORO</p>
+                    <p className="text-slate-400">Accédez à votre espace BoursaGPT</p>
                 </div>
 
                 {error && (

@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { LayoutDashboard, TrendingUp, Briefcase, ShieldAlert, LogOut, Search, Activity } from 'lucide-react';
+import { LayoutDashboard, TrendingUp, Briefcase, ShieldAlert, LogOut, Search, Activity, Globe } from 'lucide-react';
 import clsx from 'clsx';
 import { motion } from 'framer-motion';
 
@@ -14,6 +14,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, role }) => {
     const investorMenu = [
         { id: 'market', label: 'Marché', icon: LayoutDashboard, path: '/dashboard/market' },
         { id: 'analysis', label: 'Analyse IA', icon: TrendingUp, path: '/dashboard/analysis' },
+        { id: 'insights', label: 'Intelligence IA', icon: Globe, path: '/dashboard/insights' },
         { id: 'academy', label: 'Simulation Academy', icon: Activity, path: '/dashboard/academy' },
         { id: 'portfolio', label: 'Portefeuille', icon: Briefcase, path: '/dashboard/portfolio' },
     ];
@@ -26,7 +27,6 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, role }) => {
 
     const menuItems = role === 'regulateur' ? regulatorMenu : investorMenu;
     const accentColor = role === 'regulateur' ? 'border-slate-400' : 'border-gold-500';
-    const accentText = role === 'regulateur' ? 'text-slate-200' : 'text-gold-500';
     const accentGlow = role === 'regulateur' ? 'shadow-slate-500/20' : 'shadow-gold';
 
     const handleLogout = () => {
@@ -40,8 +40,8 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, role }) => {
             role === 'regulateur' ? "bg-slate-950 border-slate-800" : "bg-midnight border-slate-800"
         )}>
             <div className="p-6">
-                <h1 className="text-2xl font-bold tracking-wider text-white">
-                    PROJECT <span className={clsx("transition-colors", accentText)}>ORO</span>
+                <h1 className="text-2xl font-black tracking-tighter text-white font-bebas">
+                    BOURSA<span className="text-rose-600">GPT</span>
                 </h1>
                 <p className="text-slate-500 text-[10px] mt-1 tracking-[0.2em] uppercase font-bold">
                     {role === 'regulateur' ? 'Institutionnel CMF' : 'BVMT Intelligence'}

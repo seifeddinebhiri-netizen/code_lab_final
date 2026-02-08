@@ -30,8 +30,8 @@ const LandingPage = () => {
             <nav className="flex items-center justify-between px-8 py-6 max-w-7xl mx-auto">
                 <div className="flex items-center gap-2">
                     <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-gold-600 to-yellow-300 shadow-gold" />
-                    <span className="text-xl font-bold tracking-wider text-white">
-                        PROJECT <span className="text-gold-500">ORO</span>
+                    <span className="text-xl font-black tracking-tighter text-white font-bebas">
+                        BOURSA<span className="text-rose-600">GPT</span>
                     </span>
                 </div>
                 <button
@@ -62,7 +62,7 @@ const LandingPage = () => {
                         </span>
                     </h1>
                     <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-                        Project ORO est la première plateforme de trading intelligente dédiée au marché tunisien.
+                        BoursaGPT est la première plateforme de trading intelligente dédiée au marché tunisien.
                         Analysez, investissez et surveillez avec la puissance du Machine Learning.
                     </p>
 
@@ -110,7 +110,7 @@ const LandingPage = () => {
             </main>
 
             <footer className="border-t border-slate-800 py-12 text-center text-slate-500 text-sm">
-                <p>&copy; 2024 Project ORO. Tous droits réservés.</p>
+                <p>&copy; 2024 BoursaGPT. Tous droits réservés.</p>
             </footer>
         </div>
     );

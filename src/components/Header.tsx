@@ -102,7 +102,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch }) => {
                         className="flex items-center gap-3 group px-2 py-1.5 rounded-xl hover:bg-slate-800/50 transition-all border border-transparent hover:border-slate-700/50"
                     >
                         <div className="text-right hidden md:block">
-                            <p className="text-sm font-bold text-white leading-tight">{user?.full_name || 'Project ORO'}</p>
+                            <p className="text-sm font-bold text-white leading-tight">{user?.full_name || 'BoursaGPT'}</p>
                             <p className="text-[10px] text-gold-500 uppercase tracking-widest font-bold opacity-80">
                                 {user?.role || 'Guest'} Access
                             </p>

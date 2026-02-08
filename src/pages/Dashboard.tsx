@@ -10,6 +10,7 @@ import AnalysisView from './dashboard/AnalysisView';
 import PortfolioView from './dashboard/PortfolioView';
 import SurveillanceView from './dashboard/SurveillanceView';
 import AcademyView from './dashboard/AcademyView';
+import MarketInsightsView from './dashboard/MarketInsightsView';
 
 const Dashboard: React.FC = () => {
     const location = useLocation();
@@ -42,6 +43,8 @@ const Dashboard: React.FC = () => {
             case 'portfolio': return 'Mon Portefeuille';
             case 'alerts': return 'Centre de Surveillance';
             case 'audit': return 'Journal d\'Audit';
+            case 'academy': return 'Simulation Academy';
+            case 'insights': return 'Intelligence Marché AI';
             default: return userRole === 'regulateur' ? 'Aperçu Global Marché' : 'Marché BVMT';
         }
     };
@@ -70,7 +73,7 @@ const Dashboard: React.FC = () => {
                             )}></div>
                             <div>
                                 <p className="text-[10px] uppercase font-bold text-slate-500 tracking-[0.3em] mb-1">
-                                    {userRole === 'regulateur' ? 'RESEAU SECURISE CMF' : 'PLATEFORME ORO'}
+                                    {userRole === 'regulateur' ? 'RESEAU SECURISE CMF' : 'PLATEFORME BOURSAGPT'}
                                 </p>
                                 <h1 className="text-3xl font-bold text-white tracking-tight">
                                     {getTitle()}
@@ -88,6 +91,7 @@ const Dashboard: React.FC = () => {
                         <Route path="analysis" element={<AnalysisView />} />
                         <Route path="portfolio" element={<PortfolioView capital={userCapital} />} />
                         <Route path="academy" element={<AcademyView />} />
+                        <Route path="insights" element={<MarketInsightsView />} />
 
                         {/* Regulator Specific */}
                         <Route path="alerts" element={<SurveillanceView />} />
@@ -107,7 +111,7 @@ const Dashboard: React.FC = () => {
                         ? "bg-slate-950/95 text-slate-400 border-slate-800"
                         : "bg-midnight/95 text-slate-600 border-slate-800"
                 )}>
-                    {userRole === 'regulateur' ? 'CMF - SECURITE DES MARCHES FINANCIERS' : 'Project ORO © 2024 - BVMT Intelligence'}
+                    {userRole === 'regulateur' ? 'CMF - SECURITE DES MARCHES FINANCIERS' : 'BoursaGPT © 2024 - BVMT Intelligence'}
                 </div>
 
                 {/* Role-based background effects */}

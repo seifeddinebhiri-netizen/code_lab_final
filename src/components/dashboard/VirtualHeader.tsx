@@ -1,23 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import { Wallet, TrendingUp, DollarSign } from 'lucide-react';
 import clsx from 'clsx';
+import { apiService } from '../../services/api';
 
 interface VirtualHeaderProps {
     userId: number;
     portfolioPnL: number;
+    refreshKey?: number;
 }
 
-const VirtualHeader: React.FC<VirtualHeaderProps> = ({ userId, portfolioPnL }) => {
+const VirtualHeader: React.FC<VirtualHeaderProps> = ({ userId, portfolioPnL, refreshKey }) => {
     const [balance, setBalance] = useState<number>(0);
     const [loading, setLoading] = useState(true);
 
     const fetchBalance = async () => {
         try {
-            const response = await fetch(`http://localhost:8000/api/user/balance/${userId}`);
-            const data = await response.json();
-            if (response.ok) {
-                setBalance(data.virtual_balance);
-            }
+            const data = await apiService.getVirtualBalance(userId);
+            setBalance(data.virtual_balance);
         } catch (error) {
             console.error("Failed to fetch balance", error);
         } finally {
@@ -29,7 +28,7 @@ const VirtualHeader: React.FC<VirtualHeaderProps> = ({ userId, portfolioPnL }) =
         fetchBalance();
         const interval = setInterval(fetchBalance, 10000); // Sync balance evey 10s
         return () => clearInterval(interval);
-    }, [userId]);
+    }, [userId, refreshKey]);
 
     const totalROI = balance > 0 ? (portfolioPnL / balance) * 100 : 0;
 

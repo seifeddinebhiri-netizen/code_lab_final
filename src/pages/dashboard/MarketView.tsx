@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import MarketOverview from '../../components/widgets/MarketOverview';
 import SentimentWidget from '../../components/widgets/SentimentWidget';
+import AIChatbotWidget from '../../components/widgets/AIChatbotWidget';
 import { indices, topGainers, topLosers } from '../../utils/mockData';
 import clsx from 'clsx';
 import { ShieldAlert, Globe } from 'lucide-react';
@@ -38,7 +39,7 @@ const MarketView: React.FC = () => {
                 </div>
 
                 <div className={clsx(
-                    "lg:col-span-2 p-8 rounded-xl border flex flex-col justify-center relative overflow-hidden group",
+                    "lg:col-span-2 p-8 rounded-xl border flex flex-col justify-center relative overflow-hidden group min-h-[450px]",
                     isRegulator ? "bg-slate-900 border-slate-700" : "bg-slate-800/50 border-slate-700"
                 )}>
                     {isRegulator ? (
@@ -58,14 +59,7 @@ const MarketView: React.FC = () => {
                             </p>
                         </>
                     ) : (
-                        <div className="text-center">
-                            <p className="text-slate-400 italic mb-4">
-                                Sélectionnez une action pour une analyse détaillée ou consultez les tendances globales ci-dessus.
-                            </p>
-                            <button className="px-6 py-2 bg-gold-500/10 border border-gold-500/30 text-gold-500 rounded-lg text-sm font-bold hover:bg-gold-500 hover:text-midnight transition-all shadow-lg hover:shadow-gold">
-                                Découvrir les Recommandations IA
-                            </button>
-                        </div>
+                        <AIChatbotWidget />
                     )}
                 </div>
             </div>

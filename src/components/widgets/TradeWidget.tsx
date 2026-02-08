@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ShoppingCart, RefreshCw, CheckCircle, AlertTriangle } from 'lucide-react';
 import clsx from 'clsx';
+import { apiService } from '../../services/api';
 
 interface TradeWidgetProps {
     userId: number;
@@ -40,27 +41,17 @@ const TradeWidget: React.FC<TradeWidgetProps> = ({ userId, onTradeSuccess }) => 
 
         setLoading(true);
         try {
-            const response = await fetch('http://localhost:8000/api/trade/buy', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    user_id: userId,
-                    ticker,
-                    quantity: Number(quantity),
-                    purchase_price: Number(price)
-                })
+            await apiService.buyStock({
+                user_id: userId,
+                ticker,
+                quantity: Number(quantity),
+                purchase_price: Number(price)
             });
 
-            const data = await response.json();
-
-            if (response.ok) {
-                showToast("Achat virtuel réussi !", "success");
-                onTradeSuccess();
-            } else {
-                showToast(data.detail || "Échec de la transaction", "error");
-            }
-        } catch (error) {
-            showToast("Erreur serveur", "error");
+            showToast("Achat virtuel réussi !", "success");
+            onTradeSuccess();
+        } catch (error: any) {
+            showToast(error.message || "Échec de la transaction", "error");
         } finally {
             setLoading(false);
         }

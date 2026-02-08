@@ -32,8 +32,8 @@ const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, user }) 
                         {/* Header */}
                         <div className="p-6 border-b border-slate-800 flex justify-between items-center bg-slate-900/50">
                             <h3 className="text-lg font-bold text-white tracking-tight flex items-center gap-2">
-                                <span className="w-2 h-2 bg-gold-500 rounded-full animate-pulse" />
-                                Configuration ORO
+                                <span className="w-2 h-2 bg-rose-600 rounded-full animate-pulse" />
+                                Configuration BoursaGPT
                             </h3>
                             <button
                                 onClick={onClose}
@@ -53,7 +53,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, user }) 
                                 <div className="space-y-3">
                                     <div className="p-3 bg-slate-900/50 border border-slate-800 rounded-xl">
                                         <p className="text-[10px] text-slate-500 uppercase font-bold mb-1">Nom Complet</p>
-                                        <p className="text-sm text-white font-medium">{user?.full_name || 'Project ORO'}</p>
+                                        <p className="text-sm text-white font-medium">{user?.full_name || 'BoursaGPT'}</p>
                                     </div>
                                     <div className="grid grid-cols-2 gap-3">
                                         <div className="p-3 bg-slate-900/50 border border-slate-800 rounded-xl">
@@ -62,7 +62,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, user }) 
                                         </div>
                                         <div className="p-3 bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden">
                                             <p className="text-[10px] text-slate-500 uppercase font-bold mb-1">Email</p>
-                                            <p className="text-sm text-white font-medium truncate">{user?.email || 'contact@oro.tn'}</p>
+                                            <p className="text-sm text-white font-medium truncate">{user?.email || 'contact@boursagpt.tn'}</p>
                                         </div>
                                     </div>
                                 </div>

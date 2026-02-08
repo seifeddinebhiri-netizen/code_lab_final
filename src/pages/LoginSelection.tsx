@@ -70,8 +70,8 @@ const LoginSelection = () => {
             <div className="absolute top-0 left-0 w-full h-1/2 bg-slate-900/50 -skew-y-3 transform origin-top-left z-0" />
             <div className="absolute bottom-0 right-0 w-64 h-64 bg-gold-500/5 rounded-full blur-[80px]" />
 
-            <h1 className="text-3xl md:text-5xl font-bold mb-12 z-10 text-center">
-                Identifiez-vous <span className="text-gold-500">Project ORO</span>
+            <h1 className="text-3xl md:text-5xl font-black mb-12 z-10 text-center uppercase font-bebas tracking-tighter">
+                Identifiez-vous <span className="text-rose-600">BoursaGPT</span>
             </h1>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl w-full z-10">

@@ -63,7 +63,7 @@ const SignUp = () => {
             >
                 <div className="text-center mb-8">
                     <h1 className="text-3xl font-bold mb-2">Créer un compte</h1>
-                    <p className="text-slate-400">Rejoignez la plateforme Project ORO</p>
+                    <p className="text-slate-400">Rejoignez la plateforme BoursaGPT</p>
                 </div>
 
                 {error && (

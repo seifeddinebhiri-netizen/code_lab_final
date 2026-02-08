@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Activity, TrendingUp, TrendingDown } from 'lucide-react';
 import clsx from 'clsx';
+import { apiService } from '../../services/api';
 
 interface DemoPortfolioItem {
     id: number;
@@ -29,18 +30,15 @@ const MaTactique: React.FC<MaTactiqueProps> = ({ userId, refreshKey, onPnLUpdate
 
     const fetchPortfolio = async () => {
         try {
-            const response = await fetch(`http://localhost:8000/api/user/portfolio/${userId}`);
-            const data = await response.json();
-            if (response.ok) {
-                setItems(data);
+            const data = await apiService.getDemoPortfolio(userId);
+            setItems(data);
 
-                // Calculate PnL for the header
-                const totalPnL = data.reduce((acc: number, item: DemoPortfolioItem) => {
-                    const currentPrice = CURRENT_PRICES[item.ticker] || item.purchase_price;
-                    return acc + (currentPrice - item.purchase_price) * item.quantity;
-                }, 0);
-                onPnLUpdate(totalPnL);
-            }
+            // Calculate PnL for the header
+            const totalPnL = data.reduce((acc: number, item: DemoPortfolioItem) => {
+                const currentPrice = CURRENT_PRICES[item.ticker] || item.purchase_price;
+                return acc + (currentPrice - item.purchase_price) * item.quantity;
+            }, 0);
+            onPnLUpdate(totalPnL);
         } catch (error) {
             console.error("Failed to fetch demo portfolio", error);
         } finally {

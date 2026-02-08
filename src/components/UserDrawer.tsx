@@ -117,7 +117,7 @@ const UserDrawer: React.FC<UserDrawerProps> = ({ isOpen, onClose, user, onLogout
                                     <User className="text-gold-500" size={20} />
                                 </div>
                                 <div className="min-w-0">
-                                    <p className="text-sm font-bold text-white truncate">{user?.full_name || 'Project ORO'}</p>
+                                    <p className="text-sm font-bold text-white truncate">{user?.full_name || 'BoursaGPT'}</p>
                                     <p className="text-[10px] text-gold-500 font-bold uppercase tracking-widest opacity-80">
                                         Accès {user?.role || 'Guest'}
                                     </p>
